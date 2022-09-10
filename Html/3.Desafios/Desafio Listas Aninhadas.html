@@ -1,0 +1,52 @@
+<h1>Projeto</h1>
+<ul class="tree">
+<ul>
+    <li>
+        <span pasta>Back-End</span>
+        <ul>
+            <li>
+                <span pasta>App</span>
+                <ul>
+                    <li>Produto.js</li>
+                    <li>Usuário.js</li>
+                    <li>Venda.js</li>
+                </ul>
+            </li>
+            <li>
+                <span pasta>Config</span>
+                
+                <ul>
+                    <li>Banco.js</li>
+                    <li>Rotas.js</li>
+                    <li>Servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span pasta>Front-Ende</span>
+    <ul>
+        <li>
+            <span pasta>Public</span>
+            <ul>
+                <li>App.css</li>
+                <li>App.js</li>
+                <li>Index.html</li>
+            </ul>
+        </li>
+    </ul>
+    </li>
+</ul>
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<script>
+    document.querySelectorAll('[pasta]').forEach(pasta => {pasta.oneclick = function(e) {
+    
+            const ul = pasta.nextElementSibling
+            const d = ul.style.display
+            ul.style.display = d === 'nome' ? 'block' : 'nome'
+        }
+    })
+    //Para Selecionar Elementos de uma mesma Propriedade Coloca-se uma String entre Cochetes e Aspas Simples
+    //For.Each() Pegas os Elementos e Permite após o Click disparar uma Função
+</script>

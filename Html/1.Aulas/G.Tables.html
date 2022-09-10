@@ -1,0 +1,61 @@
+<!--Propriedade da Tabela que permite uma Borda-->
+<table border="1">
+    <caption>Produtos</caption>
+    <thead>
+        <!--Table Roll-->
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr>
+                <td>iPad</td>
+                <td>3000,00</td>
+                <td>5</td>
+                <td>15000,00</td>
+            </tr>
+            <tr>
+                <td>Sansung S9</td>
+                <td>2500,00</td>
+                <td>8</td>
+                <td>20000,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" rowspan="2 ">Total</td>
+                <td>35000,00</td>
+            </tr>
+            <tr>
+                <td>Teste</td>
+            </tr>
+        </tfoot>
+</table>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    thead tr {
+        border-bottom: solid 3px grey;
+    }
+
+    tbody tr:hover {
+        background-color: rgb(175, 172, 172);
+
+    }
+
+    tfoot {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+</style>

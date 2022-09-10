@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo CSS em HTML</title>
+    <style>
+
+        h1 {
+            font-size: 30px; /*Vai aumentar o tamanho da fonte para 30px */
+            display: none; /* Significa que Todos os H1 da página Sumirão */
+            background-color: black; /*A cor de Fundo do H1 e do Span serão Pretas devido a Aplicação disso */
+            position: absolute;
+            top: 400px; /* Vai por o que está em H1 e span a uma Distância do topo de 400px */
+            left: 400px; /* Vai por o que está em H1 e span a uma Distância da esquerda de 400px */
+        }
+
+        .Fundopreto {
+            background-color: yellowgreen;
+        }
+
+        #principal {
+            font-size: 40px;
+            font-weight: bold; /*A propriedade CSS font-weight especifica o peso ou a intensidade da fonte (ex.: negrito). Algumas fontes oferecem apenas as opções normal e negrito. */
+            background-color: gray;
+            margin: 50px; /* propriedade margin do CSS define a área de margem nos quatro lados do elemento. É uma abreviação que define todas as margens individuais de uma só vez: margin-top, margin-right (en-US), margin-bottom, e margin-left (en-US). */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <span id="principal">Texto 1</span><br><br>
+    <!--O ID é um Identificador Único dentro de Uma Página-->
+    <span class="Fundopreto">Texto 2</span><br>
+    <!--A Classe é um Identificador Usado mais na Parte de Estilo podem haver vários elementos de uma Mesma Classe-->
+    <span class="Fundopreto" jonny>Texto 3</span>
+</body>
+</html>
+
+<!--<Br> Serve para quebrar uma Linha em HTML-->
+<!--O (.) Representa no Css a Chamada de uma Classe-->
+<!--Enquanto o (#) a Chamada de um ID-->
+<!--<link rel="stylesheet" href="style.css"> Para chamar o CSS-->
